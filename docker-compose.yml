@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: "file:./dev.db"
+      NEXTAUTH_URL: "http://localhost:3000"
+      NEXTAUTH_SECRET: "development-secret-for-livraria-67-change-me"
+      ADMIN_EMAIL: "admin@livraria67.local"
+      ADMIN_PASSWORD: "admin123"
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - livraria-node-modules:/app/node_modules
+    stdin_open: true
+    tty: true
+
+volumes:
+  livraria-node-modules:
