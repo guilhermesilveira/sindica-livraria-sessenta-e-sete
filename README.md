@@ -1,11 +1,8 @@
-# Sindica Livraria Sessenta e Sete
+# Livraria Sessenta e Sete
 
-Livraria 67 is a small teaching project for Sindica classes. It is intentionally
-simple: a bookstore storefront and admin built with Node.js, Next.js, MUI,
-NextAuth, Prisma, and SQLite.
-
-This repository is the clean target project used to practice installing Sindica.
-It does not include Sindica configuration yet.
+Livraria 67 is a small teaching project. It is intentionally simple: a bookstore
+storefront and admin built with Node.js, Next.js, MUI, NextAuth, Prisma, and
+SQLite.
 
 The app includes:
 
@@ -33,8 +30,8 @@ outside a classroom demo.
 On a clean machine, the shortest path is Docker:
 
 ```bash
-git clone https://github.com/guilhermesilveira/sindica-livraria-sessenta-e-sete.git
-cd sindica-livraria-sessenta-e-sete
+git clone <repository-url>
+cd <repository-directory>
 docker compose up --build
 ```
 
@@ -54,41 +51,9 @@ npm run setup
 npm run dev
 ```
 
-## 2. Install Sindica With An Agent
+## 2. Validate Changes
 
-After confirming the bookstore runs, use this repository as the target project
-for a Sindica installation exercise. Open the agent in this repo and ask the
-short version:
-
-```text
-configure Sindica here for me
-```
-
-Agents should interpret that request using the instructions below.
-
-### For Agents: Install Sindica
-
-If the user asks something like "configure Sindica here for me", install Sindica
-in this project.
-
-Use the standard condo workflow.
-Use this project's existing Dockerfile and docker-compose.yml as the runtime and preview base.
-Configure validation with:
-npm test
-npm run lint
-npm run typecheck
-npm run build
-
-Configure the default Sindica flow with Alexo and Ralph.
-Do not commit until I review.
-```
-
-The expected result is a branch or working tree where Sindica files are added to
-this app, while the bookstore itself remains the application under test.
-
-## 3. Validate Changes
-
-Run these commands before opening a PR or asking Sindica to review a change:
+Run these commands before opening a PR or shipping a change:
 
 ```bash
 npm test
