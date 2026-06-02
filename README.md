@@ -57,10 +57,19 @@ npm run dev
 ## 2. Install Sindica With An Agent
 
 After confirming the bookstore runs, use this repository as the target project
-for a Sindica installation exercise. Open the agent in this repo and ask:
+for a Sindica installation exercise. Open the agent in this repo and ask the
+short version:
 
 ```text
-Install Sindica in this project.
+configure Sindica here for me
+```
+
+Agents should interpret that request using the instructions below.
+
+### For Agents: Install Sindica
+
+If the user asks something like "configure Sindica here for me", install Sindica
+in this project.
 
 Use the standard condo workflow.
 Use this project's existing Dockerfile and docker-compose.yml as the runtime and preview base.
